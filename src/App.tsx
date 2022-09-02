@@ -1,7 +1,17 @@
-import { greet } from "./utils/greet";
+import React, {Fragment} from 'react';
+//import './App.css';
 
-function App(): JSX.Element {
-  return <h1>{greet("World")}</h1>;
+//components
+import InputToDo from "./components/inputTodo"
+
+function App() {
+  return (
+    <Fragment> 
+      <div className="container">
+        <InputToDo/>
+      </div>
+    </Fragment>
+  );
 }
 
 export default App;
